@@ -10,17 +10,24 @@ namespace StringMaker_Lopez
     {
         public string Reverse(string s)
         {
+            string revString = "";
             Stack<char> stack = new Stack<char>();
             for (int i = 0; i < s.Length; i++)
             {
-                stack.Push(i);
+                stack.Push(s[i]);
             }
-            return s;
+           
+            while(stack.Count > 0)
+            {
+                revString += stack.Pop();
+            }
+        
+            return revString;
         }
 
-        public string Reverse(string s, bool PreserveCaseLocation)
-        {
+        //public string Reverse(string s, bool PreserveCaseLocation)
+        //{
 
-        }
+       // }
     }
 }
