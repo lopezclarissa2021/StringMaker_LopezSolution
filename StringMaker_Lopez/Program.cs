@@ -8,20 +8,7 @@ namespace StringMaker_Lopez
     {
         static void Main(string[] args)
         {
-            public string Reverse(string s)
-            {
-                Stack<int> stack = new Stack<int>();
-             for(int i = 0; i < s.Length; i++)
-                {
-                    stack.Push(i);
-                }
-                return s;
-            }
 
-            public string Reverse(string s, bool PreserveCaseLocation)
-            {
-
-            }
         }
     }
 }
